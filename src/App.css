@@ -1,11 +1,273 @@
-.App {
-  text-align: center;
+.Navbar{
+  background: #FFF;
+  height: 72px;
+  width: 100%;
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+display: flex;
+position: fixed;
+}
+.search-box{
+  color: #5C5C5C;
+font-family: IBM Plex Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type=text] {
+ 
+  padding: 12px 60px;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
+.createA{
+  margin-left: 261px;
+}
+.p span svg{
+  width: 24px;
+height: 24px;
+flex-shrink: 0;
+}
+.p{
+  color: #2E2E2E;
+text-align: right;
+font-family: IBM Plex Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 27px;
+margin-bottom: 24px;
+}
+.p span{
+  color: #2F6CE5;
+font-family: IBM Plex Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.menubar{
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 1px;
+  display: flex;
+
+}
+.menubar ul li{
+  text-decoration: none;
+  list-style: none;
+  margin: 15px;
+}
+.btngroup{
+  margin-left: 400px;
+}
+.btngroup button{
+  margin: 6px;
+}
+.btn1{
+  color: #FFF;
+font-family: IBM Plex Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.btn1 svg{
+  margin-left: 10px;
+  width: 22px;
+height: 22px;
+flex-shrink: 0;
+}
+.btn2{
+  border-radius: 4px;
+background: #2F6CE5;
+width: 125px;
+height: 36px;
+flex-shrink: 0;
+}
+.btn2 svg{
+  margin-right: 6px;
+  width: 25px;
+height: 22px;
+flex-shrink: 0;
+
+
+}
+.Cardss{
+  width: 692px;
+height: 472px;
+}
+.cardTitle{
+  color: #000;
+font-family: IBM Plex Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.cardTitle2{
+  color: #000;
+  font-family: IBM Plex Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 134.167%; /* 29.517px */
+  width: 600px;
+}
+.boxOFCard{
+  width: 692px;
+  margin-left: 200px;
+  margin-top: 28px;
+}
+.userImg
+{
+  margin-top: 22px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.userImg img{
+  border-radius: 50px;
+  width: 48px;
+height: 48px;
+flex-shrink: 0;
+}
+.userImg span{
+  margin-left: 10px;
+  color: #000;
+font-family: IBM Plex Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-top: 12px;
+}
+.userImg .views{
+  margin-left: 292px;
+  color: #525252;
+text-align: right;
+font-family: IBM Plex Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.userImg p{
+  margin-left: 50px;
+  padding-top: 6px;
+
+ 
+}
+.userImg .views svg{
+  width: 18px;
+height: 18px;
+flex-shrink: 0; margin-right: 8px;
+}
+.userImg p svg{
+  width: 42px;
+  height: 36px;
+  border-radius: 2px;
+background: #EDEEF0;
+padding: 9px 12px;
+}
+.subCard{
+  display: flex;
+}
+.subCard span svg{
+  width: 28px;
+height: 28px;
+margin-left: 24px;
+}
+
+.search-icon {
+  position: absolute;
+  /* right: 5px; */
+  left: 510px;
+  top: 24px;
+  z-index: 9999; /*this will keep the icon appearing all time, even when on input::focus*/
+}
+#pera{
+  opacity: 0.4;
+}
+#MainBox{
+  display: flex;
+}
+#first-box{
+  width: 692px;
+   height: 220px;
+}
+.backImg{
+  width: 100%;
+  height: 440px;
+}
+#logoImg{
+  height: 24px;
+  margin-Left: 74px;
+  margin-Top: 24px;
+  margin-Bottom: 24px;
+}
+#arrow{
+  display: none;
+}
+@media screen and (max-width: 1340px) {
+ .Navbar {
+  /* display: none; */
+  
+ }
+ .line{
+  display: none;
+ }
+
+ #second-part{
+  display: none;
+ }
+ .boxOFCard{
+  margin-left: 40%;
+ }
+ .Cardss{
+  width: 100%;
+ }
+ .backImg{
+  width: 100%;
+  height: auto;
+}
+.p{
+  width: 200px;
+}
+.btngroup{
+  display: none;
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .p{
+    width: 200px;
+  }
+  .boxOFCard{
+    margin-left: 100%;
+   }
+    .menubar{
+  display: none;
+ }
+}
+
+@media screen and (max-width: 413px) {
+  .Navbar{
+    display: none;
+  }
+  #arrow{
+    display: block;
+  }
+
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +275,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
